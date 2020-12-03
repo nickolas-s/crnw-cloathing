@@ -25,9 +25,9 @@ class App extends React.Component {
 
         userRef.onSnapshot((snapShot) => {
           // snapShot -> To get the id
-          console.log(snapShot);
+          // console.log(snapShot);
           // Call .data() on it to get all the other info
-          console.log(snapShot.data());
+          // console.log(snapShot.data());
 
           this.setState({
             currentUser: {
@@ -35,8 +35,6 @@ class App extends React.Component {
               ...snapShot.data(),
             },
           });
-
-          console.log(this.state);
         });
       } else {
         this.setState({ currentUser: null });
