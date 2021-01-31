@@ -1,4 +1,4 @@
-// This import loads the firebase namespace along with all its type information
+// This base import loads the firebase namespace along with all its type information
 import firebase from 'firebase/app';
 // These imports load individual services into the firebase namespace
 import 'firebase/firestore';
@@ -19,7 +19,7 @@ const config = {
 // Initialize Firebase
 firebase.initializeApp(config);
 
-// Firebase products
+// export Firebase products
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
