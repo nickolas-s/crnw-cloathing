@@ -1,3 +1,6 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-shadow */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
